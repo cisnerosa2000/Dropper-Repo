@@ -26,7 +26,7 @@ def start():
     root.title('Avoid The Blocks!')
 
     canvas = Canvas(root)
-    canvas.config(width=600,height=600)
+    canvas.config(width=600,height=600,bg='dark red')
     
     global key
     key = ''
