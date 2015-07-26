@@ -10,7 +10,7 @@ main.minsize(400,200)
 
 delay = Scale(main,from_=1000,to=100)
 delay.pack()
-num = Scale(main,from_=1,to=5,orient=HORIZONTAL)
+num = Scale(main,from_=1,to=10,orient=HORIZONTAL)
 num.pack()
 
 
@@ -53,6 +53,7 @@ def start():
             score3 = str(score2)[::-1]
      
             return str(key) + str(key).join(str(score3))
+       
         def decrypt(self):
             tbd = self.decryptme
             oldkey = (tbd[0]+ tbd[1] + tbd[2] + tbd[3] + tbd[4]+ tbd[5]+ tbd[6]+ tbd[7]+ tbd[8]+ tbd[9])
@@ -216,11 +217,4 @@ def start():
     root.mainloop()
 
 startbutton = Button(main,text="Confirm and Start?",command=start).pack()
-
-
-
-
-
-
-
 main.mainloop()
